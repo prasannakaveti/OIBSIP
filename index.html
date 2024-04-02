@@ -1,50 +1,133 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css"/>
-    <script src="script.js"></script>
-    <title>Temprature calculator</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c38551e5d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="home" id="home">
+                    <div class="home-left">
+                        <p>Web designer</p>
+                        <h1>Hi, I am <span>Prasanna</span> <br>from Sree vidyanikethan college of Engineering, Tirupati.</h1>
+                    </div>
+                    <div class="home-right">
+                        <img src="image2.jpg" width="400" height="500" alt="my logo">
+                    </div>
+                </div>
+        </div>
+        <div class="about" id="about">
+            <h1 class="ser-h1">EDUCATION</h1>
+            <div class="about-sub-cont">
+                <div class="about-card">
+                    <h1 class="sc-h1">Sree Vidyanikethan Engineering College, Tirupati.</h1>
+                    <p class="sc-p">BTech in Computer Science and Systems with relevant course work of Web Technology, App development</p>
+                </div>
+                <div class="about-card">
+                    <h1 class="sc-h1">Narayana School of Intermediate</h1>
+                    <p class="sc-p">My Intermediate course was completed with 94 perentage in MPC.</p>
+                </div>
+                <div class="about-card">
+                    <h1 class="sc-h1">Bhashyam High school, Rajampeta</h1>
+                    <p class="sc-p">My schooling is completed in State board of 10 cgpa</p>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <h1 class="ser-h1" id="skill">SKILLS AND CERTIFICATION</h1>
+            <div class="about-sub-cont">
+                <div class="about-card">
+                    <h1 class="sc-h1">Skills</h1>
+                    <ul class="sc-p">
+                        <li>C</li>
+                        <li>Basic Java</li>
+                        <li>Html,Css and Javascript</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <h1 class="sc-h1">Certifications</h1>
+                    <ul class="sc-p">
+                        <li>HTML CSS AND JAVASCRIPT FOR WEVDEVELOPMENT</li>
+                        <li>Pearson Mepro Expert</li>
+                        <li>Python basics</li>
+                    </ul>
+                    </div>
+                <div class="about-card">
+                    <h1 class="sc-h1">Internships</h1>
+                    <ul class="sc-p">
+                        <li>Salesforce</li>
+                    </ul>
+                    </div>
+            </div>
+        </div>
+
+<div id="Services">
     <div class="container">
-      <div class="temp-calculator">
-        <h2 class="title">Convert Temperature</h2>
-        <form class="temp-value" id="myForm">
-          <p>Value to Convert:</p>
-          <input type="text" placeholder="0" id="input-value" name="value" />
-        </form>
-        <div id="degree">
-          <span>
-            <p>From</p>
-            <select name="input" id="input">
-              <option value="celsius">Celsius(°C)</option>
-              <option value="fahrenhiet">Fahrenhiet(°F)</option>
-              <option value="kelvin">Kelvin(°K)</option>
-            </select>
-          </span>
-          <span>
-            <p>To</p>
-            <select name="output" id="output">
-              <option value="celsius">Celsius(°C)</option>
-              <option value="fahrenhiet">Fahrenhiet(°F)</option>
-              <option value="kelvin">Kelvin(°K)</option>
-            </select>
-          </span>
-        </div>
-        <div class="btn">
-          <input type="reset" onclick="resetForm()" value="CLEAR"/>
-          <input type="button" onclick="convertTemprature()" id="convert" value="CONVERT"/>
-        </div>
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p class="a">I can able to provide some content of web pages and also some logos
+                    for its application
+                </p>
+            <a href="">learn more</a>
+            </div>
+            <div>
+                <h2>APP development</h2>
+                <p class="a">I can able to provide some content of web pages and also some logos
+                    for its application also helps us to know more about it
+                </p><a href="">learn more</a>
+            </div>
+            <div>
+                <h2>DSA</h2>
+                <p class="a">I can able to provide some content of web pages and also some logos
+                    for its application
+                </p><a href="">learn more</a>
 
-        <div class="temp-value">
-          <p id="ans">Answer:</p>
-          <input type="text" id="result" value=""/>
+            </div>
         </div>
-      </div>
     </div>
+</div>
 
-  </body>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>jayaprasannakaveti5@gmail.com</p>
+                <p>+91 7207840674</p>
+                <div class="social-icons">
+
+                    <a href="https://www.linkedin.com/in/jaya-prasanna-kaveti-34853a258//" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/prasannakaveti" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" id="" placeholder="Your name" required>
+                    <input type="email" name="email" id=""placeholder="Your Email" required>
+                    <textarea name="message" id="" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+</body>
 </html>
